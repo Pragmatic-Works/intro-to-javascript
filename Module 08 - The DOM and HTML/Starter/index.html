@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Module 8 Local Host</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>Let's Play Blackjack</h1>
+  <div>
+    <table>
+      <tr>
+        <th id="wins"> Wins: 0 </th>
+        <th id="losses"> Losses: 0 </th>
+        <th id="ties"> Ties: 0 </th>
+      </tr>
+    </table>
+  </div>
+  <div id="playerArea">
+    <h2 id="playerScore">Player Score: 0
+    </h2>
+    <!--The Player's Area-->
+    <div class="player" id="playerCards">
+      <p id="pCardNames"></p>
+    </div>
+  </div>
+  <!--The Dealer's Area-->
+  <div id="dealerArea">
+    <h2 id="dealerScore"> Dealer Score: 0
+    </h2>
+    <div class="dealer" id="dealerCards">
+      <p id="dCardNames"></p>
+    </div>
+
+  </div>
+  <!--Where all the buttons are-->
+  <div id="buttonArea">
+    <button type="button" class="playButtons" onclick="startGame()" id="start">Deal Cards</button>
+    <button type="button" class="playButtons hidden" onclick="hitOption()" id="hit">Hit</button>
+    <button type="button" class="playButtons hidden" onclick="standOption()" id="stand">Stand</button>
+    <div id="playAgain" class="hidden">
+      <button type="button" class="playButtons" onclick="dealOption()" id="deal">Deal Again</button>
+    </div>
+  </div>
+  <!--The Results-->
+  <h4 id="results"></h4>
+
+  <!--Scripts linked to an external file-->
+  <script src="./demo_script.js"></script>
+</body>
+
+</html>

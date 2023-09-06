@@ -1,0 +1,57 @@
+@keyframes shiftColors {
+    0% {
+        color: palevioletred;
+    }
+
+    20% {
+        color: red;
+    }
+
+    30% {
+        color: orange;
+    }
+
+    40% {
+        color: goldenrod;
+    }
+
+    50% {
+        color: yellowgreen;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    70% {
+        color: midnightblue;
+    }
+
+    80% {
+        color: purple;
+    }
+
+    100% {
+        color: palevioletred;
+    }
+}
+
+#congrats {
+    text-align: center;
+    max-height: 70vh;
+}
+
+#congratsText {
+    font-size: 15vh;
+    animation-name: shiftColors;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    font-family: cursive;
+}
+
+body{
+    text-align: center;
+}
+
+

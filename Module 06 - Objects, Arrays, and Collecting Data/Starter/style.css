@@ -1,0 +1,100 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-right: 2rem;
+    animation-name: none;
+    animation-duration: 20s;
+}
+.featureButton {
+    width: 23vh;
+    height: 23vh;
+    margin: 1vh;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.feature-row {
+    max-height: 30%;
+    margin-bottom: 2vh
+}
+
+.buttonImage {
+    height: 100%;
+    object-fit: contain;
+}
+
+.base {
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    height: 100%;
+    object-fit: contain;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    height: 100%;
+}
+
+#clear {
+    margin-left: 3vw;
+    float: left
+}
+
+#check {
+    margin-right: 3vw;
+    float: right;
+}
+
+#menu {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+#navMenu {
+    display: block;
+}
+
+#starter {
+    height: 3vh;
+}
+
+.dualSide {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 70vh;
+    height: 70vh;
+}
+
+.playButtons {
+    width: 176px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: large;
+    padding: 14px 20px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.playButtons:hover {
+    background-color: #2e7b31;
+}
+
+.playButtons:disabled {
+    background-color: #949494;
+    color: black;
+    cursor: not-allowed;
+}

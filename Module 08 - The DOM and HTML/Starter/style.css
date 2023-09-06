@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-right: 2rem;
+    animation-name: none;
+    animation-duration: 20s;
+}
+
+#deal {
+    width: 356px;
+}
+
+.hidden {
+    display: none;
+}
+
+.playButtons {
+    width: 176px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: large;
+    padding: 14px 20px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.playButtons:hover {
+    background-color: #2e7b31;
+}
+
+.playButtons:disabled {
+    background-color: #949494;
+    color: black;
+    cursor: not-allowed;
+}
+
+#dealerArea img {
+    max-width: 8%;
+    max-height: 24%;
+    margin: 1px;
+}
+
+#playerArea img{
+    max-width: 8%;
+    max-height: 24%;    
+    margin: 1px; 
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--The Title of the Web Page-->
+  <title>Module 04 - Conditional Statements</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>Terms and Conditions May Apply</h1>
+  <p id="starter">
+    Let's play a game of Red Light Green Light! Click the New Light Button to set it up!
+  </p>
+  <div id="container">
+    <div id="light" class="hidden"></div>
+  </div>
+  <button class="playButtons" type="button" id="start" onClick="startGame()">Start Game!</button>
+  <button class="playButtons" type="button" id="mid" onClick="redLight()">Stop!</button>
+  <button class="playButtons" type="button" id="final" onClick="changeLight()">New Light!</button>
+  <div id="square" class="hidden"></div>
+
+  <!--Scripts linked to an external file-->
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

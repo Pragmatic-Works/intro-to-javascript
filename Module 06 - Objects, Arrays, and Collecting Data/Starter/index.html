@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Module 06" Objects, Arrays, and Collecting Data</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>Hey!</h1>
+  <div>
+    <h2 id="speaker">I'm looking for a friend of mine. Have you seen them?</h2>
+    <button class="playButton" id="starter" onclick="startProcedure(this.id); getResponse('skin')"> Let's see... </button>
+  </div>
+  <div id="hideMe" class="hidden">
+    <div id="menu">
+      <!--Where all the options are-->
+      <div id="options" class="dualSide">
+      </div>
+      <!--Where all the images are-->
+      <div id="person" class="dualSide">
+        <img id="layer4" class="layer feature"></img>
+        <img id="layer3" class="layer feature"></img>
+        <img id="layer2" class="layer feature"></img>
+        <img id="layer1" class="layer feature"></img>
+        <img id="layer0" class="base" src=./features/outline.png></img>
+      </div>
+    </div>
+    <div id="features">
+      <!--Where all the options are-->
+      <button class="playButtons" id="skin" onclick="getInfo(this.id); getResponse(this.id)">Skin Tone</button>
+      <button class="playButtons" id="eyes" onclick="getInfo(this.id);getResponse(this.id)">Eye Color</button>
+      <button class="playButtons hidden" id="hColor" onclick="getInfo(this.id); getResponse(this.id)">Hair
+        Color</button>
+      <button class="playButtons hidden" id="allHair" onclick="getInfo(this.id); getResponse(this.id)">Hair
+        Length</button>
+      <button class="playButtons" id="express" onclick="getInfo(this.id); getResponse(this.id)">Expression</button>
+    </div>
+    <!--Where the navigation options are-->
+    <button class="playButtons" id="clear" onclick="clearLayers()">Start Over</button>
+    <button class="playButtons" id="check" onclick="checkPerson()">Is this them?</button>
+  </div>
+  <!--The Results-->
+  <h4 id="results"></h4>
+
+  <!--Scripts linked to an external file-->
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

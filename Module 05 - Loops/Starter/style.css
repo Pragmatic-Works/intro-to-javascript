@@ -1,0 +1,101 @@
+h1 {
+    text-align: center;
+    margin-right: 2rem;
+}
+
+body {
+    text-align: center
+}
+
+.myAnswer {
+    width: 3rem;
+    height: 3rem;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid black;
+}
+
+#guessButton {
+    width: 176px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#guessButton:hover {
+    background-color: #2e7b31;
+}
+
+#headerButton {
+    height: 2rem;
+    width: 3rem;
+}
+
+#board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.guess-box {
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: large;
+}
+
+.filled-box {
+    border: 2px solid;
+}
+
+.guess-row {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+#starter {
+    height: 3vh;
+}
+
+.playButton {
+    width: 176px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: large;
+    padding: 14px 20px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.playButton:hover {
+    background-color: #2e7b31;
+}
+
+.playButton:disabled {
+    background-color: #949494;
+    color: black;
+    cursor: not-allowed;
+}
