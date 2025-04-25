@@ -6,6 +6,7 @@
   "scripts": {
     "start": "lite-server"
   },
+  "type": "module",
   "author": "PragmaticWorks - Ace Phillips - aphillips@pragmaticworks.com",
   "license": "ISC",
   "devDependencies": {
