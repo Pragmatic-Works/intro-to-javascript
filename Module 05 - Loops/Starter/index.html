@@ -11,22 +11,27 @@
 
 <body>
   <div id="header">
-    <h1 id="module">Mordle</h1>
+    <h1 id="module">Mordle<button type="button" id="headerButton" onClick="change()"></button></h1>
+
   </div>
+
   <p id="starter"></p>
   <div id="board">
   </div>
-  <button class="playButton" type="button" id="myButton" onClick="playGame()">Start</button>
+  <button type="button" id="myButton" onClick="playGame()">Start</button>
+
   <div id="seperator">
     <label for="seperator" id="myLabel">Type your guess on your keyboard!</label>
   </div>
+
   <div id="guesses">
     <div id="submitAnswer">
     </div>
   </div>
 
   <!--Scripts linked to an external file-->
-  <script src="script.js" type="module"></script>
+  <script src="changeScript.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

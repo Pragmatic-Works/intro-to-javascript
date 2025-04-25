@@ -1,0 +1,51 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"name":"csharp"},{"name":"fsharp","languageName":"F#","aliases":["f#","fs"]},{"name":"html","languageName":"HTML"},{"name":"http","languageName":"HTTP"},{"name":"javascript","languageName":"JavaScript","aliases":["js"]},{"name":"mermaid","languageName":"Mermaid"},{"name":"pwsh","languageName":"PowerShell","aliases":["powershell"]},{"name":"value"}]}}
+
+#!markdown
+
+# Module 1 Examples
+
+#!markdown
+
+### _JS Logical Errors vs Syntax Errors_
+
+To structure JS, there are some rules we have to follow in order to prevent the computer from reading things in a way we don't want it to.
+
+---
+
+### **Logical Error**
+
+Logical Errors will produce errors in the output of the script, but won't prevent it from running in the first place. 
+
+#!csharp
+
+let logicalError = "You want me to be the output." 
+
+let logicErr = "Not me."                           
+
+try{
+    console.log(logicErr);
+} catch (err){
+    console.log (`${err.name}: ${err.message}.`);
+} finally{
+    console.log(
+        "Improper referencing is a form of logical error. These are typically harder to fix."
+        );
+};
+
+#!markdown
+
+### **Syntax Error**
+
+Syntax errors are muhc more critical than logical errors, as they stop your code from running.
+
+#!csharp
+
+try{
+    console.log(logicErr);
+} catch (err){
+    console.log (`${err.name}: ${err.message}.`);
+} finally {
+    console.log("Missing declarations are a form of syntax error. These tend to be easier to fix");
+};

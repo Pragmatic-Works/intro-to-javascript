@@ -1,8 +1,8 @@
 //*****************Module 05 Starter Script*****************//
-import { THE_GAME, answer, btn, lbl, guessButton, board, area, row, numGuesses } from "./assistive_file_module5.js"
 
 //#region Module Setup
 //! DO NOT CHANGE THE MATERIAL IN THIS SECTION//
+
 const THE_GAME = {
     WORDS: ["try", "fix", "tie", "ram", "pit", "joy"],
 };
@@ -12,9 +12,11 @@ const THE_GAME = {
     let btn = document.getElementById("myButton");
     let lbl = document.getElementById("myLabel");
     let guessButton = document.createElement("button");
+
     guessButton.setAttribute("id", "guessButton");
     guessButton.setAttribute("onClick", "checkPlayerGuess()");
     guessButton.innerHTML = "Submit Guess!";
+
 //! DO NOT CHANGE THE MATERIAL IN THIS SECTION//    
 //#endregion 
 
@@ -41,7 +43,7 @@ document.addEventListener("keyup", (e) => {
     let pressedKey = String(e.key);
     let foundKey = pressedKey.match(/[a-z]/gi);
 
-    //ToDo: Create a condition to resolve if all boxes are filled
+    //ToDo: Create a condition to resolve if all boxes are filled and the user presses a button
 
     if (pressedKey === "Backspace" || pressedKey === "Del") {
         //ToDo: Plug in the function to resolve the Backspace or Delete key press
@@ -53,7 +55,7 @@ document.addEventListener("keyup", (e) => {
         return;
     };
 
-    //If multiple keys are pressed at the same time, or the user pressed a number key, then ignore it 
+    // (?) If multiple keys are pressed at the same time, or the user pressed a number key, then ignore it 
     if (!foundKey || foundKey.length > 1) {
         return;
     }

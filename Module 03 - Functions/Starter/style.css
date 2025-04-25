@@ -2,12 +2,107 @@ body {
     text-align: center;
 }
 
-.hidden{
+.featureButton {
+    width: 23vh;
+    height: 23vh;
+    margin: 1vh;
+    padding: 0;
+}
+
+@keyframes drive {
+    from {
+        right: 86.5vw;
+    }
+
+    to {
+        right: 1vw;
+    }
+}
+
+#player {
+    position: absolute;
+    text-align: left;
+    background: red;
+    width: 12.5vw;
+    height: 12.5vw;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: drive;
+}
+
+.hidden {
     display: none;
 }
 
-#starter{
-    height:3vh;
+.feature-row {
+    max-height: 30%;
+    margin-bottom: 2vh
+}
+
+img {
+    height: 100%;
+    object-fit: contain;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#light {
+    position: relative;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    background-color: black
+}
+
+.base {
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#clear {
+    margin-left: 3vw;
+    float: left
+}
+
+#check {
+    margin-right: 3vw;
+    float: right;
+}
+
+#menu {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+#navMenu {
+    display: block;
+}
+
+#starter {
+    height: 3vh;
+}
+
+.dualSide {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 70vh;
+    height: 70vh;
+}
+
+.hideButton {
+    display: none;
 }
 
 .playButtons {
@@ -27,8 +122,8 @@ body {
     background-color: #2e7b31;
 }
 
-.playButtons:disabled{
+.playButtons:disabled {
     background-color: #949494;
     color: black;
-    cursor:not-allowed;
+    cursor: not-allowed;
 }

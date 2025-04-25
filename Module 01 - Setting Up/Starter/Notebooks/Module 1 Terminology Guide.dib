@@ -1,0 +1,42 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"name":"csharp"},{"name":"fsharp","languageName":"F#","aliases":["f#","fs"]},{"name":"html","languageName":"HTML"},{"name":"http","languageName":"HTTP"},{"name":"javascript","languageName":"JavaScript","aliases":["js"]},{"name":"mermaid","languageName":"Mermaid"},{"name":"pwsh","languageName":"PowerShell","aliases":["powershell"]},{"name":"value"}]}}
+
+#!markdown
+
+## Module 1: Setup, Syntax, and Some Bugs
+
+#### IDE 
+- Refers to the Itegrated Development Environment, a type of text editor which can be usedf to develop snippets of code and programs. 
+- IDES can contain a wide variety of features, and often are used to build, test, and compile code. 
+- These can come with some form of syntax checking, as well as a debugger, which can help a user check for errors in a process and correct them if needed. 
+
+#### Script
+- A series which contains a a series of executable instructions This can be in any programming language. 
+
+#### Latest Build
+- The most current version of a build. This version may contain multiple bugs, and may not respond appropriately to certain actions.
+
+#### Stable Build
+- The most stable or bug-free version of a build/program. This version has been tested repeatedly, and will contain the least amount of bugs, if any.
+
+#### OS/Operating System
+- The system that a program runs on. Most commonly Windows, Mac, or Linux/Unix for computer software, or Android, iOS and macOS for handheld devices.
+
+#### Syntax
+- The specific ruleset for writing in any language. Casing, directionality, formatting, and symbol placement are all included in this ruleset.
+
+#### Keyword
+- A specific word reserved for a particular use.
+
+#### Debugging
+- Reviewing code to check for uncaught syntax or logical error.
+
+#### Logical Error/Runtime Error
+- an error that occurs while the program is running, but does not prevent it from doing so.
+
+#### Syntax Error/Compile-Time Error
+- an error that prevents the program from completing a requested/required task, or may prevent the program from running at all.
+
+#### Commit
+- Similar to version history, commits help keep track of changes by line, allowing you to see what changes were made. 
