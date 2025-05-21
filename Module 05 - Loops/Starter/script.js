@@ -22,10 +22,12 @@ const THE_GAME = {
 
 /* TASK LIST
 ToDo: Create your variables
-    - A variable to 
+    - A variable to hold the remaining number of guesses
+    - A variable to hold the word we're guessing
+    - A variable to hold the number of letters that can be typed
 ToDo: Create functions
     - Create a Function we can link the game progress to when we're finished,
-      and use to check that our code if functioning. 
+        -  and use to check that our code if functioning. 
     - Create a function to create the 3x3 board we'll play on
     - Create three functions to deal with:
         - The delete key
