@@ -3,7 +3,7 @@
 // ! DO NOT MODIFY ANY OF THE CONTENT WITHIN THIS REGION ! \\
 
 let mode = "count";
-let txt = document.getElementById("text");
+let txt = document.getElementById("starter");
 let streetLight = document.getElementById("light");
 let startBtn = document.getElementById("start");
 let midBtn = document.getElementById("mid");
@@ -17,6 +17,7 @@ function changeMode(mode) {
 
       streetLight.classList.remove("hidden");
       square.classList.remove("hidden");
+      square.style.animationPlayState = "paused";
 
       startBtn.setAttribute("onClick", "changeMode('move')");
       startBtn.innerText = "Change it back!";
@@ -55,7 +56,7 @@ function changeMode(mode) {
 changeMode(mode);
 //Avaliable animationName(s): "upper", "downer", "dizzy", "stutterstep", "superslow"
 
-let light = "";
+let light = "off";
 let currLight = "off";
 
 function redLight() {

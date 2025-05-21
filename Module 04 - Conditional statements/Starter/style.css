@@ -52,7 +52,7 @@ body {
     background-color: black
 }
 
-#player {
+#square {
     position: absolute;
     text-align: left;
     background: red;
